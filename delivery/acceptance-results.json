@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "id": "dates",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "tasks",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "cards",
+      "status": "passed",
+      "evidence": "delivery/integration-results.json"
+    },
+    {
+      "id": "attachments",
+      "status": "passed",
+      "evidence": "delivery/integration-results.json"
+    },
+    {
+      "id": "storage-resolution",
+      "status": "passed",
+      "evidence": "delivery/integration-results.json"
+    },
+    {
+      "id": "mail-eml",
+      "status": "passed",
+      "evidence": "delivery/integration-results.json"
+    },
+    {
+      "id": "ui-smoke",
+      "status": "passed",
+      "evidence": "delivery/ui-results.json"
+    },
+    {
+      "id": "folders-43",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "month-review",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "daily-rollover",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "folder-counts",
+      "status": "passed",
+      "evidence": "delivery/unit-results.json"
+    },
+    {
+      "id": "package",
+      "status": "passed",
+      "evidence": "delivery/package-results.json"
+    }
+  ]
+}

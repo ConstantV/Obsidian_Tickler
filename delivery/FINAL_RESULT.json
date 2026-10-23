@@ -1,0 +1,9 @@
+{
+  "status": "ready_for_pilot",
+  "summary": "Tickler 0.1.0 has no filled controls. Only active navigation and calendar selections have a thin theme-coloured border; clickable text stays bright, static labels are muted, and a line separates days and months. npm run verify passes 16 tests and all 12 acceptance categories.",
+  "limitations": [
+    "The updated build has not been retested in the real Obsidian app; Finder dragging, physical Linux, cloud sync, and direct mail-app dragging remain untested.",
+    "The browser harness uses the real view code with a thin host stub. Light/dark theme adaptation is demonstrated there, but individual community themes remain untested."
+  ],
+  "test_report": "delivery/TEST_REPORT.md"
+}

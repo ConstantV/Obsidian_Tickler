@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-23T16:31:28.799Z",
+  "node": "v24.13.0",
+  "npm": "11.6.2",
+  "runs": [
+    {
+      "id": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "delivery/typecheck.log"
+    },
+    {
+      "id": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "log": "delivery/lint.log"
+    },
+    {
+      "id": "unit",
+      "command": "npm exec -- vitest run tests/unit.test.ts --reporter=json --outputFile=delivery/unit-results.json",
+      "exitCode": 0,
+      "log": "delivery/unit.log"
+    },
+    {
+      "id": "integration",
+      "command": "npm exec -- vitest run tests/integration.test.ts --reporter=json --outputFile=delivery/integration-results.json",
+      "exitCode": 0,
+      "log": "delivery/integration.log"
+    },
+    {
+      "id": "harness",
+      "command": "npm exec node scripts/build-harness.mjs",
+      "exitCode": 0,
+      "log": "delivery/harness.log"
+    },
+    {
+      "id": "ui",
+      "command": "npm run test:ui",
+      "exitCode": 0,
+      "log": "delivery/ui.log"
+    },
+    {
+      "id": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "delivery/build.log"
+    },
+    {
+      "id": "package",
+      "command": "npm run package",
+      "exitCode": 0,
+      "log": "delivery/package.log"
+    }
+  ]
+}
